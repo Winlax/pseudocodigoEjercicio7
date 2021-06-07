@@ -1,0 +1,41 @@
+Algoritmo Ejercicio7
+	
+	x = 1 
+	Pares = 0
+	Impares = 0
+	Ceros = 0
+	total = 15
+	
+	Mientras x <= total Hacer
+		
+		n = Aleatorio(0,36)
+		
+		si n = 0 Entonces
+			
+			Ceros = Ceros + 1
+			
+		SiNo Si n mod 2 == 0 Entonces
+				
+				Pares = Pares + 1
+				
+			SiNo
+				
+				Impares = Impares + 1
+				
+			FinSi
+			
+		FinSi
+		
+		x = x + 1
+		
+	FinMientras
+	
+	CerosPorcentaje = ( Ceros * 100 ) / 15
+	ParesPorcentaje = ( Pares * 100 ) / 15
+	ImparesPorcentaje = ( Impares * 100 ) / 15
+	
+	Escribir "Numeros Pares: ",ParesPorcentaje,"%"
+	Escribir "Numeros Impares: ",ImparesPorcentaje,"%"
+	Escribir "Numeros Ceros: ",CerosPorcentaje,"%"
+	
+FinAlgoritmo
